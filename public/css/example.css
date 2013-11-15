@@ -79,7 +79,8 @@ body{
 	
 }
 .container hr,
-.container footer{
+.container footer,
+nav{
 	display:none;
 }
 body > .container{
