@@ -22,11 +22,12 @@ class demoController extends AbstractActionController {
 
   public function viewsetAction() {
   	
-	
+	  $renderer = $this->serviceLocator->get('Zend\View\Renderer\RendererInterface');
+    $baseurl = $renderer->basePath();
     $ret = new JsonModel(            );
     $ret->setVariables(
             array(
-              'html' => "<img src='/img/Chrysanthemumb.jpg'/>",
+              'html' => "<img src='" . $baseurl . "/img/Chrysanthemumb.jpg'/>",
            
             )
     );
