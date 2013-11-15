@@ -1,0 +1,42 @@
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+.bg-color(@bgcolor:#fff){
+	 background:@bgcolor;
+}
+.ft-color(@color:#000){
+	color:@color;
+}
+.margin(@margin:1em){
+	margin:@margin;
+}
+.padding(@padding:1em){
+	padding:@padding;
+}
+.bg-img(@bg-img:none){
+	background-image:@bg-img;
+}
+.bg-position(@bg-posi:0 0){
+	background-position:@bg-posi
+}
+.bg-repeat(@bg-rp:no-repeat){
+	background-repeat:@bg-rp;
+}
+.example_h1 {
+    .rounded-corners(10px);
+    .bg-color(green);
+    .ft-color(#fff);
+    .margin(0.5em 0);
+    .padding(0.5em 1em);
+}
+.example_header{
+	.bg-img(url(../img/header.png));
+	height:133px;
+	.bg-position(center center);
+	.bg-repeat;
+	.margin(0 auto 1em);
+}

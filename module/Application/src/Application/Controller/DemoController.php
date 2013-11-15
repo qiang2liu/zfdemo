@@ -21,16 +21,19 @@ class demoController extends AbstractActionController {
   }
 
   public function viewsetAction() {
+  	
+	
     $ret = new JsonModel(            );
     $ret->setVariables(
             array(
-              'html' => "<div>set info</div>",
-              'jsonVar1' => 'jsonvar1',
-              'jsonArray' => array(1, 2, 3),
+              'html' => "<img src='/img/Chrysanthemumb.jpg'/>",
+           
             )
     );
 
     return $ret;
+	 
+	 
   }
 
 }
