@@ -1,0 +1,95 @@
+/* jQuery Gridly
+ * Copyright 2013 Kevin Sylvestre
+ *  1.1.4
+ */
+.gridly, .gridly > :not(.dragging) {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; 
+}
+.gridly .dragging {
+  z-index: 800; 
+  opacity:.8;
+}
+.gridly {
+  position: relative;
+  width:960px;
+  background:#eee;
+}
+.brick{
+	cursor:pointer;
+}
+.brick.small {
+  width: 220px;
+  height: 220px;
+}
+.brick.large {
+  width: 700px;
+  height: 700px;
+}
+.brick:nth-child(20n + 1) {
+  background: #1abc9c; 
+}
+.brick:nth-child(20n + 2) {
+  background: #16a085; 
+}
+.brick:nth-child(20n + 3) {
+  background: #2ecc71; 
+}
+.brick:nth-child(20n + 4) {
+  background: #27ae60; 
+}
+.brick:nth-child(20n + 5) {
+  background: #3498db; 
+}
+.brick:nth-child(20n + 6) {
+  background: #2980b9; 
+}
+.brick:nth-child(20n + 7) {
+  background: #9b59b6; 
+}
+.brick:nth-child(20n + 8) {
+  background: #8e44ad; 
+}
+.brick:nth-child(20n + 9) {
+  background: #34495e; 
+}
+.brick:nth-child(20n + 10) {
+  background: #2c3e50; 
+}
+.brick:nth-child(20n + 11) {
+  background: #f1c40f; 
+}
+.brick:nth-child(20n + 12) {
+  background: #f39c12; 
+}
+.brick:nth-child(20n + 13) {
+  background: #e67e22; 
+}
+.brick:nth-child(20n + 14) {
+  background: #d35400; 
+}
+.brick:nth-child(20n + 15) {
+  background: #e74c3c; 
+}
+.brick:nth-child(20n + 16) {
+  background: #c0392b; 
+}
+.brick:nth-child(20n + 17) {
+  background: #ecf0f1; 
+}
+.brick:nth-child(20n + 18) {
+  background: #bdc3c7; 
+}
+.brick:nth-child(20n + 19) {
+  background: #95a5a6; 
+}
+.brick:nth-child(20n + 20) {
+  background: #7f8c8d; 
+}
+span.close{
+	float:right;
+	padding:0 0.4em;
+	font-size:2em;
+	color:#fff;
+}
